@@ -1,9 +1,8 @@
+/** @type {import('tailwindcss').Config} */
 import { addIconSelectors } from "@iconify/tailwind";
 import { addDynamicIconSelectors } from "@iconify/tailwind";
 import { iconsPlugin, getIconCollections } from "@egoist/tailwindcss-icons";
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,jsx}",
@@ -141,4 +140,6 @@ module.exports = {
       // and the more recommended way is to use `dynamicIconsPlugin`, see below.
     }),
   ],
-};
+
+}
+
