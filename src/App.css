@@ -1,0 +1,252 @@
+* {
+  /* background-color: #F5F3F3; */
+  font-family: "Rubik", sans-serif !important;
+  scroll-behavior: smooth;
+  /* font-family: "Nunito Sans", sans-serif !important; */
+}
+.tex-bg {
+  color: transparent;
+  background-clip: text;
+  /* background-image: linear-gradient(260deg,#5ecd7e,#206c43); */
+  background-image: linear-gradient(180deg, #36b65a, #135833);
+  /* transition: all 320ms cubic-bezier(0.48,0.04,0.52,0.96); */
+}
+.logo-fonts{
+  font-family: "Courgette", cursive !important;
+}
+.user-table-border {
+  border-top: 1px solid #141417;
+  border-right: 1px solid #141417;
+  border-radius: 16px;
+}
+
+.user-bottom-border {
+  border: 1px solid #141417;
+  border-radius: 0px 0px 16px 16px !important;
+}
+
+.bodyheight {
+  max-height: 380px !important;
+  overflow-y: scroll;
+}
+
+.border-nav {
+  border-bottom: 1px dashed #141417 !important;
+}
+
+.header-nav {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.date-input {
+
+  /* General styles */
+
+  font-size: 1.5rem;
+  /* text-lg */
+
+  padding: 0.5rem 1rem;
+
+  border: none;
+  /* border-0 */
+
+  border-radius: 0.25rem;
+
+  background-color: #f7f7f7;
+  /* bg-muted/40 */
+
+  color: #b80f0f;
+
+  width: 100%;
+
+
+  /* Focus styles */
+
+  outline: none;
+
+  box-shadow: none;
+
+  transition: background-color 0.2s ease;
+}
+
+.date-input:focus {
+
+  background-color: #111 !important;
+
+  box-shadow: 0 0 0 2px #666;
+
+}
+
+
+/* Date picker styles */
+
+.date-input::-webkit-datetime-edit {
+
+  padding: 0.5rem;
+
+}
+
+
+.date-input::-webkit-datetime-edit-month-field {
+
+  width: 50%;
+
+}
+
+
+.date-input::-webkit-datetime-edit-day-field {
+
+  width: 30%;
+
+}
+
+
+.date-input::-webkit-datetime-edit-year-field {
+
+  width: 20%;
+
+}
+
+
+/* Remove default arrow */
+
+.date-input::-webkit-inner-spin-button,
+
+.date-input::-webkit-outer-spin-button {
+
+  -webkit-appearance: none;
+
+  margin: 0;
+
+}
+
+
+/* Remove default dropdown arrow */
+
+.date-input::-webkit-calendar-picker-indicator {
+
+  display: none;
+
+}
+
+.outlinedis {
+  outline-style: none;
+}
+
+.recharts-wrapper {
+  max-width: 350px !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+/* table.css */
+.table-container {
+  height: 500px; /* adjust the height to your needs */
+  overflow-y: auto;
+}
+/* table.css */
+.table-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.table-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.table-body {
+  overflow-y: auto;
+  height: 300px; /* adjust the height to your needs */
+}
+
+.table-row {
+  cursor: pointer;
+}
+
+.table-row:hover {
+  background-color: #f0f0f0;
+}
+.recharts-wrapper {
+  max-width: 100% !important;
+}
+.error{
+  color: rgb(221, 15, 15);
+}
+input, select, textarea {
+  touch-action: manipulation;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* focus css */
+input:focus {
+  outline: 2px solid green;  /* Change the outline color to green */
+  outline-offset: 2px;       /* Optional: Adds some space around the outline */
+  box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2);  /* Optional: Adds a subtle green glow */
+}
+input:focus {
+  outline: none;  /* Remove the default outline */
+  border-color: green;  /* Change the border color to green */
+  box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.5);  /* Add a green glow */
+}
+input:focus {
+  outline: none;
+}
+input:focus-visible {
+  outline: 2px solid green;
+  outline-offset: 2px;
+}
+
+/* Remove focus styles when using a mouse */
+input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 700ms ease-out;
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust color as needed */
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted));
+}
+
+/* ::-webkit-scrollbar-track {
+  background-color: hsl(var(--muted)); 
+} */
